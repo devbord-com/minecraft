@@ -1,0 +1,14 @@
+name: DevbordBugReport
+version: 1.0.0
+main: com.devbord.bugreport.BugReportPlugin
+api-version: '1.20'
+description: Bug reports from players become cards on devbord
+commands:
+  bug:
+    description: Report a bug to the dev team
+    usage: /bug <what went wrong and what you expected>
+    permission: devbord.bug
+permissions:
+  devbord.bug:
+    description: Allows reporting bugs with /bug
+    default: true

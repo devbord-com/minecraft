@@ -1,0 +1,28 @@
+# Address of devbord and a "Report only" API key of the board for bugs.
+# The key stays on the server; players never see it.
+url: "https://devbord.com"
+api-key: "db_xxxxxxxx_..."
+
+# Labels for new cards (a missing label is created) and the shortest description that is accepted.
+labels: ["Bug"]
+min-length: 8
+
+# Seconds a player has to wait between two reports.
+cooldown: 120
+
+# Tell players that their report was fixed (the card was completed on devbord).
+fixed:
+  notify: true
+  check-minutes: 5
+  follow-days: 30
+
+messages:
+  players-only: "Only players can report bugs."
+  not-configured: "Bug reports are not set up on this server yet."
+  usage: "Usage: /bug <what went wrong and what you expected>"
+  cooldown: "Please wait %d seconds before reporting another bug."
+  sending: "Sending your bug report..."
+  sent: "Thanks! Your report is on the board as #%s."
+  sent-duplicate: "Thanks! This bug was already reported (#%s); your report was added."
+  failed: "Sending the bug report failed. Please try again later."
+  fixed: "Good news: your bug report #%s was fixed."
